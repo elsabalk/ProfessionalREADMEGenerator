@@ -30,4 +30,4 @@ Contributions are welcome, feedback is important!
 Please run the following command to run tests: npm test
 
 ## Questions
-If you have any questions about the repo, please open an issue or contact me directly at elsabalk@hotmail.com. You can also find more of my awesome work at https://github.com/elsabalk
+If you have any questions about the repo, please open an issue or contact me directly at elsabalk@hotmail.com. You can also find more of my awesome work at https://github.com/elsabalk. You can find a video demonstration of this application at https://drive.google.com/file/d/1GUnbcV4d7IqqsxCmS9vG1tGg0iNL5bL_/view
