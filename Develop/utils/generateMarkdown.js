@@ -4,24 +4,28 @@ function renderLicenseBadge(license) {
 
   if(license == 'MIT')
  {
-  return `![License: MIT](https://opensource.org/licenses/MIT)(https://img.shields.io/badge/License-MIT-yellow.svg)`;
- 
+  return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]${renderLicenseLink(license)}`;
+  
+  //return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
  }
 
  if (license == 'GPL 3.0')
  {
-  return `![License: GPL 3.0](https://opensource.org/licenses/GPL-3.0)(https://img.shields.io/badge/license-GPL-blue.svg)`;
+  return `[![License: GPL 3.0](https://img.shields.io/badge/license-GPL-blue.svg)]${renderLicenseLink(license)}`;
+  // return `![License: GPL 3.0](https://opensource.org/licenses/GPL-3.0)(https://img.shields.io/badge/license-GPL-blue.svg)`;
  
  }
 
 if(license == 'Apache 2.0')
  {
-  return `![License: Apache 2.0](http://www.apache.org/licenses/)(https://img.shields.io/badge/license-Apache%202-blue)`;
+  return `[![License: Apache 2.0](https://img.shields.io/badge/license-Apache%202-blue)]${renderLicenseLink(license)}`;
+  // return `![License: Apache 2.0](http://www.apache.org/licenses/)(https://img.shields.io/badge/license-Apache%202-blue)`;
  
  }
  if(license == 'BSD')
  {
-  return `![License: BSD](https://pypi.org/project/license/)(https://img.shields.io/badge/license-BSD-green)`;
+  return `[![License: BSD](https://img.shields.io/badge/license-BSD-green)]${renderLicenseLink(license)}`;
+//   return `![License: BSD](https://pypi.org/project/license/)(https://img.shields.io/badge/license-BSD-green)`;
  
  }
 
@@ -33,13 +37,34 @@ if(license == 'Apache 2.0')
 }
 
 
-//****Combined methods in one to render and link badges*****/
-// // TODO: Create a function that returns the license link
-// // If there is no license, return an empty string
-// function renderLicenseLink(license) {
+
+// TODO: Create a function that returns the license link
+// If there is no license, return an empty string
+function renderLicenseLink(license) {
+  
+  if(license == 'MIT')
+  {
+   return '(https://opensource.org/licenses/MIT)';
+  }
+  if (license == 'GPL 3.0')
+  {
+    return '(https://opensource.org/licenses/GPL-3.0)';
+  }
+  if(license == 'Apache 2.0')
+  {
+    return '(http://www.apache.org/licenses/)';
+  }
+  if (license == 'BSD')
+  {
+    return '(https://pypi.org/project/license/)';
+  }
+  else
+  {
+     return "";
+  }
 
 
-// }
+}
 
 // // TODO: Create a function that returns the license section of README
 // // If there is no license, return an empty string
