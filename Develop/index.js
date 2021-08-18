@@ -1,4 +1,4 @@
-// TODO: Include packages needed for this application
+// Packages
 const inquirer = require('inquirer');
 const fs = require('fs');
 
@@ -6,14 +6,9 @@ const generateMarkdown = require('./utils/generateMarkdown');
 
 const fileName = 'README.md';
 
-
-// TODO: Create an array of questions for user input
-
-
-
-const questions = () => { 
-    return inquirer.prompt([
-        {
+// Questions
+const questions = () => {
+    return inquirer.prompt([{
             type: 'input',
             name: 'gitHubUserName',
             message: 'What is your Github Username?',
@@ -38,10 +33,10 @@ const questions = () => {
             message: 'What kind of license will your project have?',
             name: 'license',
             choices: [
-                'MIT', 
-                'GPL 3.0', 
-                'Apache 2.0', 
-                'BSD', 
+                'MIT',
+                'GPL 3.0',
+                'Apache 2.0',
+                'BSD',
                 'none'
             ],
         },
@@ -67,23 +62,22 @@ const questions = () => {
             name: 'contribute',
             message: 'What does the user need to know about contributing to the repo?',
         },
-        
-    ]).then(answers => {
-                writeToFile(fileName, answers)
-                console.log('Generating Readme file.....')
-            }).catch((err) => console.error(err));
-        }
 
-// TODO: Create a function to write README file
+    ]).then(answers => {
+        writeToFile(fileName, answers)
+        console.log('Generating Readme file.....')
+    }).catch((err) => console.error(err));
+}
+
+// Function to write to README file based on answers and file name
 function writeToFile(readmeFileName, answers) {
     fs.writeFileSync(readmeFileName, generateMarkdown(answers));
 }
 
-questions();
-
-
-// TODO: Create a function to initialize app
-function init() {}
+// Function to initialize app
+function init() {
+    questions();
+}
 
 
 // Function call to initialize app

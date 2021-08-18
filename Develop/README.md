@@ -1,33 +1,33 @@
-## pop
-  ---------------------------------------------------------------------
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+## Professional README Generator
+---------------------------------------------------------------------
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-  ## Description 
-  pop
-  
-  ## Table of Contents
-  1. [Installation](#installation)
-  2. [Usage](#usage)
-  3. [License](#license)
-  4. [Contributing](#contributing) 
-  5. [Tests](#tests)
-  6. [Questions](#questions)
+## Description 
+This is a command-line application that generates a professional README file using user input. This project uses node.js and javascript.
 
-  ## Installation
-  Please run the following command to install the neccessary dependencies: npm i
+## Table of Contents
+1. [Installation](#installation)
+2. [Usage](#usage)
+3. [License](#license)
+4. [Contributing](#contributing) 
+5. [Tests](#tests)
+6. [Questions](#questions)
 
-  ## Usage
-  You should know...pop
+## Installation
+Please run the following command to install the neccessary dependencies: npm i
 
-  ## License
-  The project is licensed under MIT
-  
+## Usage
+You should know...The user should be proficient in javascript and node.js.
 
-  ## Contributing
-  The following are the contributers to this project: pop
+## License
+The project is licensed under MIT
 
-  ## Tests
-  npm test
 
-  ## Questions
-  If you have any questions about the repo, please open an issue or contact me directly at pop. You can also find more of my awesome work at pop
+## Contributing
+Contributions are welcome, feedback is important!
+
+## Tests
+Please run the following command to run tests: npm test
+
+## Questions
+If you have any questions about the repo, please open an issue or contact me directly at elsabalk@hotmail.com. You can also find more of my awesome work at https://github.com/elsabalk
